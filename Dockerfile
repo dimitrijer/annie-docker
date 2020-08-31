@@ -19,8 +19,6 @@ RUN apk update && apk upgrade && \
     apk add --no-cache bash git openssh
 
 # install annie
-RUN go get github.com/iawia002/annie
+RUN go get gopkg.in/dimitrijer/annie.v0
 
-ENTRYPOINT ["annie"]
-
-
+ENTRYPOINT ["annie.v0"]
